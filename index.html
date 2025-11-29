@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css" />
+    <title>Pulgarcito</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="estilos.css">
+
+    <style>
+        body {
+            padding-top: 120px;
+        }
+        img.float-left {
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav class="border fixed split-nav">
+        <div class="nav-brand">
+            <h3><a href="#">Menu</a></h3>
+        </div>
+
+        <div class="collapsible">
+            <input id="collapsible1" type="checkbox" name="collapsible1">
+            <label for="collapsible1">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </label>
+
+            <div class="collapsible-body">
+                <ul class="inline">
+                    <li><a href="#Tematica">Temática</a></li>
+                    <li><a href="#Produccion">Producción</a></li>
+                    <li><a href="#Integrantes">Integrantes</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO -->
+    <main class="paper container">
+
+        <!-- TÍTULO -->
+        <div class="row">
+            <article class="article">
+                <h1 class="article-title">Pulgarcito: Aventura Gráfica Interactiva</h1>
+                <p class="text-lead">Un proyecto desarrollado para aplicar conocimientos de diseño, narrativa y programación, creando una experiencia interactiva completa.</p>
+            </article>
+        </div>
+
+        <!-- JUEGO -->
+        <div class="row">
+            <iframe src="p5/index.html" frameborder="0" width="650" height="500"></iframe>
+        </div>
+
+        <hr class="margin-extra-large">
+
+        <!-- TEMÁTICA -->
+        <section id="Tematica" class="row">
+            <div class="md-10 sm-12 col">
+                <h3>La temática</h3>
+                <p>Esta Aventura Gráfica Interactiva es una adaptación libre del cuento clásico de Pulgarcito.</p>
+                <p>La historia respeta algunos elementos tradicionales del relato, como los hermanos perdidos en el bosque y la idea de encontrar el camino de regreso, pero incorpora también decisiones nuevas y un estilo visual propio. El juego presenta una estética colorida e infantil, con ilustraciones editadas que acompañan el tono de un cuento sencillo, cercano y accesible.</p>
+                <p>El jugador debe avanzar por diferentes pantallas ilustradas, leer fragmentos de la historia y elegir las decisiones correctas para que los hermanos logren regresar sanos y salvos. Algunas opciones llevan a caminos alternativos o finales distintos, por lo que cada elección tiene un peso real dentro de la narrativa. El objetivo final es guiar a Pulgarcito y sus hermanos tomando decisiones clave en los momentos más importantes de la aventura.</p>
+                <p>
+                    <img src="pulgarcito.jpg" class=" float-left" width="300"> A lo largo del proceso aprendimos a planificar una historia interactiva desde la estructura base (flujo), y a manejar la lógica de estados, fundamental para construir una aventura no lineal.
+                </p>
+            </div>
+
+            <!-- PRODUCCIÓN -->
+            <div id="Produccion" class="md-12 sm-12 col">
+                <h3>Proceso de producción</h3>
+                <ul class="list-group">
+                    <li class=" md-12 sm-12 col list-group-item">
+                        <strong>Cómo desarrollamos el proyecto:</strong>El trabajo comenzó con la creación del diagrama de flujo, donde definimos la secuencia de pantallas, los momentos clave de la historia y las decisiones que el jugador podría tomar. Este paso fue fundamental para organizar toda la narrativa antes de pasar a la parte visual y técnica.
+                    </li>
+                    <li class=" md-12 sm-12 col list-group-item">
+                        <strong>Imágenes:</strong> Una vez definido el recorrido, generamos las imágenes utilizando Gemini, ajustando cada una para que se adaptara a la estética colorida e infantil que queríamos para la aventura. Estas ilustraciones fueron editadas y ordenadas según el flujo narrativo planificado.
+                    </li>
+                    <li class="md-12 sm-12 col list-group-item">
+                        <strong>Textos:</strong>Luego redactamos los textos narrativos, incluyendo los diálogos y las preguntas interactivas, cuidando que cada fragmento acompañara coherentemente la historia y ayudara al jugador a entender las decisiones disponibles.
+                    </li>
+                    <li class="md-12 sm-12 col list-group-item">
+                        <strong>Programar en p5.js:</strong> En la etapa técnica, implementamos todo en p5.js, donde trabajamos la lógica del juego: carga y organización de imágenes,manejo de pantallas y estados,botones de navegación,
+                        integración de sonidos, la programación de las elecciones del jugador. Las partes más desafiantes fueron organizar el flujo narrativo en código para que cada pantalla conduzca correctamente a la siguiente, y configurar el sonido para que se reproduzca en los momentos correctos.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <hr class="margin-extra-large">
+
+        <!-- INTEGRANTES -->
+        <section id="Integrantes" class="row">
+            <div class="md-12">
+                <h2>El equipo</h2>
+            </div>
+
+            <div class="md-4 sm-12 margin-right-large">
+                <div class="card" style="padding: 5px; text-align: center; border-radius: 10px;">
+                    <h4 class="card-title">Melany Ortega</h4>
+                    <p>Se encargó de la escritura de textos, la programación de las pantallas, la lógica del juego en p5.js y la estructura general del proyecto.</p>
+                </div>
+            </div>
+
+            <div class="md-4 sm-12 col margin-right-large">
+                <div class="card" style="padding: 5px; text-align: center; border-radius: 10px;">
+                    <h4 class="card-title">Camila Mendoza</h4>
+                    <p>Se encargo de realizar el diagrama de flujo, la búsqueda y edición de imágenes, y luego integró el sonido dentro de la aventura gráfica..</p>
+                </div>
+            </div>
+
+            <p class="md-12 sm-8 col">
+               A lo largo del trabajo fuimos revisando, ajustando y mejorando cada parte entre las dos para que el resultado final fuera claro, atractivo y funcional.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="text-center padding">
+        <p class="text-small">
+            Trabajo Práctico Final - Sitio web de la Aventura Gráfica Interactiva - Comisión 4 - PMIW
+        </p>
+    </footer>
+
+</body>
+</html>

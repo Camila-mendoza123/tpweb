@@ -1,0 +1,49 @@
+
+body {
+    padding-top: 120px;
+    background: #c5b188;
+    font-family: "Roboto", sans-serif !important;
+}
+
+/* Navbar */
+nav {
+    background-color: #4ca040;
+}
+
+/* Título principal */
+.article-title {
+    color: #117815;
+    text-shadow: 1px 1px 3px #000000;
+}
+
+/* Subtítulos */
+h2, h3 {
+    color: #44840c;
+}
+
+/* Tarjetas de integrantes */
+.card {
+    background-color: #c1ffc0;
+    border: 2px solid #097503;
+    box-shadow: 0 3px 6px rgb(0,0,0,0.15);
+}
+
+/* Imágenes */
+img.float-left {
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 3px solid #88ff00;
+}
+
+/* Listas */
+.list-group-item {
+    background-color: #d5ffd7;
+    border-left: 4px solid #59ff00;
+}
+
+/* Footer */
+footer {
+    background-color: #4ca040;
+    border-top: 3px solid #073f01;
+}
